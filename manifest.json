@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "New Tab",
+  "version": "1.2.0",
+  "description": "Clean, aesthetic dashboard for your New Tab page with customizable widget transparency, live wallpapers, and ultra focus mode.",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.open-meteo.com/*",
+    "https://geocoding-api.open-meteo.com/*",
+    "https://get.geojs.io/*",
+    "https://ipapi.co/*",
+    "https://itunes.apple.com/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; frame-src https://open.spotify.com https://*.spotify.com; img-src 'self' * data: blob:; media-src 'self' * data: blob:; connect-src 'self' * data: blob:;"
+  }
+}
